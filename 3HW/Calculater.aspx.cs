@@ -34,6 +34,43 @@ namespace _3HW {
         }
 
         protected void bt_Add_Click(object sender, EventArgs e) {
+            switch (o_Num.i_Operater)
+            {
+                case 1:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] += o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 2:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] -= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 3:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] *= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 4:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] /= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                default:
+                    break;
+            }
             if (o_Num.i_BoundCount > 1) {
                 o_Num.ia_List[0] += o_Num.ia_List[1];
                 o_Num.ia_List[1] = 0;
@@ -44,9 +81,49 @@ namespace _3HW {
             o_Num.ia_List[1] = 0;
             o_Num.i_BoundCount++;
             ViewState["PreivousInfo"] = o_Num;
+            lb_Operate.Text = "";
+            lb_Result.Text = (o_Num.ia_List[0]).ToString();
+           
         }
 
         protected void bt_Miuns_Click(object sender, EventArgs e) {
+            switch (o_Num.i_Operater)
+            {
+                case 1:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] += o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 2:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] -= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 3:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] *= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 4:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] /= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                default:
+                    break;
+            }
             if (o_Num.i_BoundCount > 1)
             {
                 o_Num.ia_List[0] -= o_Num.ia_List[1];
@@ -58,10 +135,50 @@ namespace _3HW {
             o_Num.ia_List[1] = 0;
             o_Num.i_BoundCount++;
             ViewState["PreivousInfo"] = o_Num;
+            lb_Operate.Text = "";
+            lb_Result.Text = (o_Num.ia_List[0]).ToString();
+           
 
         }
 
         protected void bt_Product_Click(object sender, EventArgs e) {
+            switch (o_Num.i_Operater)
+            {
+                case 1:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] += o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 2:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] -= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 3:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] *= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 4:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] /= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                default:
+                    break;
+            }
             if (o_Num.i_BoundCount > 1)
             {
                 o_Num.ia_List[0] *= o_Num.ia_List[1];
@@ -73,9 +190,49 @@ namespace _3HW {
             o_Num.ia_List[1] = 0;
             o_Num.i_BoundCount++;
             ViewState["PreivousInfo"] = o_Num;
+            lb_Operate.Text = "";
+            lb_Result.Text = (o_Num.ia_List[0]).ToString();
+           
         }
 
         protected void bt_Divide_Click(object sender, EventArgs e) {
+            switch (o_Num.i_Operater)
+            {
+                case 1:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] += o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 2:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] -= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 3:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] *= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                case 4:
+                    if (o_Num.i_BoundCount > 1)
+                    {
+                        o_Num.ia_List[0] /= o_Num.ia_List[1];
+                        o_Num.ia_List[1] = 0;
+                        o_Num.i_BoundCount--;
+                    }
+                    break;
+                default:
+                    break;
+            }
             if (o_Num.i_BoundCount > 1)
             {
                 o_Num.ia_List[0] /= o_Num.ia_List[1];
@@ -87,6 +244,9 @@ namespace _3HW {
             o_Num.ia_List[1] = 0;
             o_Num.i_BoundCount++;
             ViewState["PreivousInfo"] = o_Num;
+            lb_Operate.Text = "";
+            lb_Result.Text = (o_Num.ia_List[0]).ToString();
+            
         }
 
         protected void bt_Clear_Click(object sender, EventArgs e) {
